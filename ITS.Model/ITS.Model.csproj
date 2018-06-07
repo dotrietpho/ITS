@@ -47,7 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Models\CityCategory.cs" />
+    <Compile Include="Models\Footer.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\LocationCategory.cs" />
+    <Compile Include="Models\LocationTag.cs" />
+    <Compile Include="Models\Plan.cs" />
+    <Compile Include="Models\PlanDetail.cs" />
+    <Compile Include="Models\StopPoint.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\Trip.cs" />
+    <Compile Include="Models\VisitorStatistic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +69,9 @@
       <Project>{a3f30e68-5b7a-42e2-9a35-c32c4f05965a}</Project>
       <Name>ITS.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Astract\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
