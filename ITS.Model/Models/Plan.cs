@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ITS.Model.Models
 {
 
-    class Plan
+    public class Plan
     {
         [Key]
         public int ID { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ITS.Model.Models
 {
     [Table("CityCategorys")]
-    class CityCategory
+    public class CityCategory
     {
         [Key]
         public int ID { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ITS.Model.Models
 {
     [Table("StopPoints")]
-    class StopPoint
+    public class StopPoint
     {
         [Key]
         public int ID { get; set; }

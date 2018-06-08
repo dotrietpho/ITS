@@ -10,7 +10,7 @@ using System.Xml.Linq;
 namespace ITS.Model.Models
 {
     [Table("Locations")]
-    class Location
+    public class Location
     {
         [Key]
         public int ID { get; set; }

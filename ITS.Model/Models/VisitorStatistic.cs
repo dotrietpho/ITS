@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITS.Model.Models
 {
-    class VisitorStatistic
+    public class VisitorStatistic
     {
         [Key]
         public Guid ID { get; set; }

@@ -8,21 +8,16 @@ using System.Threading.Tasks;
 
 namespace ITS.Model.Models
 {
-    [Table("Tags")]
-    public class Tag
+    [Table("Users")]
+    public class User
     {
         [Key]
         [MaxLength(50)]
         public string ID { get; set; }
 
-        [MaxLength(50)]
         [Required]
-        public string Name { get; set; }
-
+        public string Password { get; set; }
         [MaxLength(50)]
-        [Required]
-        public string Type { get; set; }
-
-
+        public string Content { get; set; }
     }
 }

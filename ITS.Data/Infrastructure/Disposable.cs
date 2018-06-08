@@ -9,7 +9,7 @@ namespace ITS.Data.Infrastructure
     public class Disposable : IDisposable
     {
         // Flag: Has Dispose already been called?
-        bool disposed = false;
+        bool disposed;
 
         // Public implementation of Dispose pattern callable by consumers.
         public void Dispose()
@@ -21,23 +21,21 @@ namespace ITS.Data.Infrastructure
         // Protected implementation of Dispose pattern.
         protected virtual void Dispose(bool disposing)
         {
-            if (disposed)
-                return;
+           
 
-            if (disposing)
+            if (!disposed && disposing)
             {
-                // Free any other managed objects here.
-                //
+                DisposeCore();
             }
 
-            // Free any unmanaged objects here.
-            //
+        
             disposed = true;
         }
 
-        ~Disposable()
+        // Overide this to dispose custom objects
+        protected virtual void DisposeCore()
         {
-            Dispose(false);
+           
         }
     }
 }
