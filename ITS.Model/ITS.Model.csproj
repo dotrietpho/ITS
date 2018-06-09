@@ -62,14 +62,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ITS.Common\ITS.Common.csproj">
-      <Project>{a3f30e68-5b7a-42e2-9a35-c32c4f05965a}</Project>
-      <Name>ITS.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Astract\" />

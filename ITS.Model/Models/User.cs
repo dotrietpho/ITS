@@ -16,8 +16,14 @@ namespace ITS.Model.Models
         public string ID { get; set; }
 
         [Required]
+        [MaxLength(20)]
         public string Password { get; set; }
         [MaxLength(50)]
         public string Content { get; set; }
+
+        [Required]
+        public bool Status { get; set; }
+        IEnumerable<Trip> Trips { get; set; }
+        IEnumerable<Plan> Plans { get; set; }
     }
 }

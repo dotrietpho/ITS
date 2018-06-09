@@ -221,10 +221,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ITS.Common\ITS.Common.csproj">
-      <Project>{a3f30e68-5b7a-42e2-9a35-c32c4f05965a}</Project>
-      <Name>ITS.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ITS.Data\ITS.Data.csproj">
       <Project>{38f2ca00-c9eb-48c1-989a-c201d3282f1c}</Project>
       <Name>ITS.Data</Name>
@@ -232,10 +228,6 @@
     <ProjectReference Include="..\ITS.Model\ITS.Model.csproj">
       <Project>{ce4f13de-ff32-4600-be8d-ed9a3488992b}</Project>
       <Name>ITS.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ITS.Service\ITS.Service.csproj">
-      <Project>{acdb34d8-dac5-45c5-b32b-64ed28c25a3e}</Project>
-      <Name>ITS.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

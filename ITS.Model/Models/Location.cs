@@ -35,17 +35,21 @@ namespace ITS.Model.Models
         public string URL {get;set;}
         [MaxLength(256)]
         public string Image { get; set; }
-        public XElement MoreImages { get; set; }
+        [Column(TypeName = "xml")]
+        public string MoreImages { get; set; }
         public decimal Price { get; set; }
         public decimal StartPrice { get; set; }
         [MaxLength(500)]
         public string Detail { get; set; }
         public bool HomeFlag { get; set; }
         public int ViewCount { get; set; }
+        [Required]
         public bool Status { get; set; } 
         public int CategoryID { get; set; }
         [ForeignKey("CategoryID")]
         public virtual LocationCategory LocationCategory { get; set; }
+
+
 
     }
 }

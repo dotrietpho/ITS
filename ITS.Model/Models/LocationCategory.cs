@@ -21,7 +21,7 @@ namespace ITS.Model.Models
         public bool? HomeFlag { get; set; }
         public bool? Status { get; set; }
         public int CityID { get; set; }
-        [ForeignKey("CityCategoryID")]
+        [ForeignKey("CityID")]
         public virtual CityCategory CityCategory { get; set; }
 
         public virtual IEnumerable<Location> Locations { set; get; }

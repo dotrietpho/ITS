@@ -17,5 +17,10 @@ namespace ITS.Model.Models
         public DateTimeOffset StartDay { get; set; }
         public DateTimeOffset StopDay { get; set; }
         public virtual IEnumerable<StopPoint> StopPoints { get; set; }
+
+        [MaxLength(50)]
+        public string UserID { get; set; }
+        [ForeignKey("UserID")]
+        public virtual User user { get; set; }
     }
 }

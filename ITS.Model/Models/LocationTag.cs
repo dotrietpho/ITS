@@ -12,10 +12,12 @@ namespace ITS.Model.Models
     public class LocationTag
     {
         [Key]
+        [Column(Order =1)]
         public int LocationID { set; get; }
 
         [Key]
         [MaxLength(50)]
+        [Column(Order = 2)]
         public string TagID { get; set; }
 
         [ForeignKey("LocationID")]

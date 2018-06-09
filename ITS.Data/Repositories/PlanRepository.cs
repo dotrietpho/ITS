@@ -6,14 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace ITS.Data.Repositories
 {
-    public interface IUserRepository : IRepository<User>
+    public interface IPlanRepository : IRepository<Plan>
     { }
-    public class UserRepository : RepositoryBase<User> 
+    public class PlanRepository : RepositoryBase<PlanRepository> /*, IPlanRepository*/
     {
-        public UserRepository(IDbFactory dbFactory) : base(dbFactory)
+        public PlanRepository(IDbFactory dbFactory) : base(dbFactory)
         { }
     }
 }
